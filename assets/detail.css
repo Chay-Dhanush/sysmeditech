@@ -11,3 +11,23 @@ h1,h2,h3{font-family:"DM Sans","Manrope",sans-serif;letter-spacing:-.035em}
 .whatsapp-float:hover .whatsapp-tooltip,.whatsapp-float:focus-visible .whatsapp-tooltip{opacity:1;transform:translateX(0)}
 @media(max-width:560px){.whatsapp-float{width:56px;height:56px;right:16px;bottom:18px}.whatsapp-float svg{width:27px;height:27px}}
 
+
+/* Detail-page header mirrors the homepage navigation layout. */
+.brand{min-width:0;flex:0 0 auto}
+.brand img{width:154px;height:88px;object-fit:contain;display:block}
+.nav{min-height:92px;gap:24px}
+.navlinks{display:flex;align-items:center;justify-content:flex-end;gap:15px;flex-wrap:nowrap;font-size:.86rem;font-weight:650}
+.navlinks .btn{white-space:nowrap}
+@media(max-width:960px){
+  .navlinks{gap:10px;font-size:.82rem}
+  .brand img{width:135px;height:80px}
+  .nav{gap:12px}
+}
+@media(max-width:760px){
+  .nav{min-height:78px}
+  .brand img{width:100px;height:65px}
+  .menu-btn{display:block}
+  .navlinks{display:none;position:absolute;left:15px;right:15px;top:calc(100% + 7px);background:#fff;border:1px solid var(--line);border-radius:17px;padding:18px;box-shadow:var(--shadow);align-items:stretch;flex-direction:column;gap:14px}
+  .navlinks.open{display:flex}
+  .navlinks .btn{width:100%}
+}
