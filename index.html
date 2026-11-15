@@ -195,3 +195,10 @@ refreshServiceSummary();
 .floating-card strong{color:#08275b}
 .floating-card span{color:#3f5069}
 </style>
+<style>
+/* Put the dark photo treatment between the image and the readable project label. */
+.project-card:after{display:none}
+.project-card>a{z-index:auto}
+.project-card>a:after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(5,18,39,.10) 0%,rgba(5,18,39,.35) 40%,rgba(5,18,39,.94) 100%)}
+.project-card .project-label{z-index:2}
+</style>
